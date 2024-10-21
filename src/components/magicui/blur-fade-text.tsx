@@ -5,18 +5,16 @@ import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useMemo } from "react";
 
 interface BlurFadeTextProps {
-  text: string;
+  text: React.ReactNode;  // Accepts any valid React node
   className?: string;
-  variant?: {
-    hidden: { y: number };
-    visible: { y: number };
-  };
+  variant?: Variants;
   duration?: number;
   characterDelay?: number;
   delay?: number;
   yOffset?: number;
   animateByCharacter?: boolean;
 }
+
 const BlurFadeText = ({
   text,
   className,
@@ -31,7 +29,14 @@ const BlurFadeText = ({
     visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },
   };
   const combinedVariants = variant || defaultVariants;
-  const characters = useMemo(() => Array.from(text), [text]);
+
+  // Always call useMemo unconditionally
+  const characters = useMemo(() => {
+    if (typeof text === 'string') {
+      return Array.from(text);
+    }
+    return [];
+  }, [text]);
 
   if (animateByCharacter) {
     return (
@@ -75,7 +80,7 @@ const BlurFadeText = ({
           }}
           className={cn("inline-block", className)}
         >
-          {text}
+          {text}  {/* Render text directly */}
         </motion.span>
       </AnimatePresence>
     </div>
