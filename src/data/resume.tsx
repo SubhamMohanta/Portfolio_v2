@@ -6,15 +6,7 @@ export const DATA = {
   url: "https://github.com/SubhamMohanta/",
   location: "Rourkela, Odisha",
   locationLink: "https://www.google.com/maps/place/Rourkela",
-  description:
-    (
-      <div>
-        An aspiring web developer. I love building things and collaborating with people. Very active on
-        <span className="inline-block align-middle">
-          <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="5px" height="5px" fill="#FF4656" className="w-6 h-6 align-middle ml-2"><path d="M4.781 6.375C4.515 6.044 4.067 5.916 3.669 6.057 3.268 6.197 3 6.575 3 7v18c0 .232.081.457.228.636l14 17C17.418 42.866 17.701 43 18 43h14c.384 0 .735-.221.901-.566.167-.347.12-.758-.121-1.059L4.781 6.375zM46.336 7.059c-.396-.146-.842-.02-1.11.309l-18 22c-.245.299-.295.712-.13 1.062C27.262 30.777 27.614 31 28 31h14c.304 0 .591-.138.781-.375l4-5C46.923 25.447 47 25.228 47 25V8C47 7.577 46.734 7.2 46.336 7.059z"/></svg>
-        </span>
-      </div>
-    ),
+  description: "An aspiring web developer. I love building things and collaborating with people. Very active on [Figma](https://www.figma.com/@shubham50) ",
   summary:
     "I am currently pursuing Bachelors in Computer Science and Engineering at Lovely Professional University with specialization in [Kalvium](/#education). Currently I am working with technologies like [Next.js](https://nextjs.org/), [React](https://react.dev/), [Java](https://www.java.com/en/) and [Python](https://python.org/). ",
   avatarUrl: "/me.png",

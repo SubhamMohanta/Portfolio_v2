@@ -5,7 +5,7 @@ import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useMemo } from "react";
 
 interface BlurFadeTextProps {
-  text: React.ReactNode;  // Accepts any valid React node
+  text: string;
   className?: string;
   variant?: Variants;
   duration?: number;
