@@ -1,4 +1,4 @@
-Portfolio page made using Next.js and Magic UI.
+Portfolio page made using Next.js.
 
 ## Want this template?
 
