@@ -62,6 +62,7 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
+        <Analytics/>
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             {children}
